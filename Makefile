@@ -5,7 +5,7 @@ build:
 test: build
 	mvn test
 
-package:
+package: build
 	mvn package
 
 clean:
@@ -15,3 +15,9 @@ run:
 mvn exec:java
 
 all: clean build test package
+
+docker-build:
+	docker build -t book-catalog .
+
+docker-run:
+	docker run --rm -p 8080:8080 book-catalog
