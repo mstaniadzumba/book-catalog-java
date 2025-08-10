@@ -12,7 +12,7 @@ clean:
 	mvn clean
 
 run:
-mvn exec:java
+	mvn exec:java
 
 all: clean build test package
 
