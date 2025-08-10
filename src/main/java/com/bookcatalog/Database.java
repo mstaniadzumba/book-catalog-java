@@ -26,7 +26,9 @@ public class Database {
             """;
 
         try (Connection conn = connect();
+             // Creates a Statement object which lets you run SQL
              Statement stmt = conn.createStatement()) {
+            //runs the sql command stored in sql var
             stmt.execute(sql);
             System.out.println("Table created successfully");
         } catch (SQLException e) {
