@@ -6,6 +6,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 import com.bookcatalog.util.ConfigLoader;
 
 public class Database {
@@ -35,5 +38,7 @@ public class Database {
             System.out.println( "Error creating books table: " + e.getMessage());
         }
     }
+
+    //temp comment
 
 }
