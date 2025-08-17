@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.bookcatalog.BookTest
+Test set: com.bookcatalog.DatabaseTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.177 s -- in com.bookcatalog.BookTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.953 s -- in com.bookcatalog.DatabaseTest

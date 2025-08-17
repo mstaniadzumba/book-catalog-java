@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.bookcatalog.BookTest" time="0.177" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.bookcatalog.DatabaseTest" time="0.953" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -7,6 +7,7 @@
     <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="Africa/Johannesburg"/>
     <property name="os.name" value="Linux"/>
     <property name="java.vm.specification.version" value="21"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
@@ -52,5 +53,26 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testBookToString" classname="com.bookcatalog.BookTest" time="0.107"/>
+  <testcase name="testAddBook" classname="com.bookcatalog.DatabaseTest" time="0.121">
+    <system-out><![CDATA[Table created successfully
+All books cleared from table
+Book added: Test Driven Development by Tania
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateBook" classname="com.bookcatalog.DatabaseTest" time="0.14">
+    <system-out><![CDATA[All books cleared from table
+Book added: Original Title by Original Author
+Book updated: TDD By example by Tania
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteBook" classname="com.bookcatalog.DatabaseTest" time="0.146">
+    <system-out><![CDATA[All books cleared from table
+Book added: Book to Delete by Author
+Book deleted with id 11
+]]></system-out>
+  </testcase>
+  <testcase name="testConnect" classname="com.bookcatalog.DatabaseTest" time="0.046">
+    <system-out><![CDATA[All books cleared from table
+]]></system-out>
+  </testcase>
 </testsuite>
